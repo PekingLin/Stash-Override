@@ -1,0 +1,14 @@
+name: Local LAN Hosts
+desc: 本地域名直连，避免系统代理下 *.lan 访问失败
+
+hosts:
+  'web.lan': 127.0.0.1
+  'grafana.lan': 127.0.0.1
+  'homeassistant.lan': 127.0.0.1
+  'clickhouse.lan': 127.0.0.1
+
+dns:
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - 'localhost'
