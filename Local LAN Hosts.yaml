@@ -1,11 +1,11 @@
-name: Local LAN Hosts
-desc: 本地域名直连，避免系统代理下 *.lan 访问失败
+name: Local LAN Fix
+desc: Resolve local .lan domains
 
 hosts:
-  'web.lan': 127.0.0.1
+  'ha.lan': 127.0.0.1
   'grafana.lan': 127.0.0.1
-  'homeassistant.lan': 127.0.0.1
-  'clickhouse.lan': 127.0.0.1
+  'web.lan': 127.0.0.1
+  'api.lan': 127.0.0.1
 
 dns:
   fake-ip-filter:
